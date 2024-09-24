@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ahmed Bennaya Blog</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom font size for large headings */
+        .hero-heading {
+            font-size: 2.75rem;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-900">
+
+    <!-- Header Section -->
+    <header class="bg-white shadow-lg p-6">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="text-2xl font-bold text-blue-700">Ahmed Bennaya Blog</div>
+            <nav class="space-x-6">
+                <a href="#" class="text-gray-700 hover:text-blue-500">Home</a>
+                <a href="#" class="text-gray-700 hover:text-blue-500">About</a>
+                <a href="#" class="text-gray-700 hover:text-blue-500">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-cover bg-center h-96" style="background-image: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?crop=entropy&fit=crop&w=1050&q=80');">
+        <div class="flex items-center justify-center h-full bg-black bg-opacity-50">
+            <h1 class="text-white text-5xl font-bold hero-heading">Welcome to Ahmed's Blog</h1>
+        </div>
+    </section>
+
+    <!-- Featured Posts Section -->
+    <section class="py-12">
+        <div class="container mx-auto">
+            <h2 class="text-4xl font-bold mb-8 text-center text-blue-700">Featured Posts</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+                <!-- Post 1 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1516245834210-c4c142787335?crop=entropy&fit=crop&w=600&q=80" alt="Post 1" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">The Future of Technology</h3>
+                        <p class="text-gray-700 mb-4">Explore the upcoming trends and breakthroughs in the world of tech...</p>
+                        <a href="#" class="text-blue-500 hover:underline">Read more</a>
+                    </div>
+                </div>
+                <!-- Post 2 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?crop=entropy&fit=crop&w=600&q=80" alt="Post 2" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Designing for the Future</h3>
+                        <p class="text-gray-700 mb-4">A deep dive into modern design patterns and user experience...</p>
+                        <a href="#" class="text-blue-500 hover:underline">Read more</a>
+                    </div>
+                </div>
+                <!-- Post 3 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1532619187604-89f5f7f96f41?crop=entropy&fit=crop&w=600&q=80" alt="Post 3" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Business Growth Strategies</h3>
+                        <p class="text-gray-700 mb-4">Tips and techniques for growing your business in a competitive market...</p>
+                        <a href="#" class="text-blue-500 hover:underline">Read more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Category Section -->
+    <section class="py-12 bg-gray-200">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold mb-6 text-center text-blue-700">Categories</h2>
+            <div class="flex justify-center space-x-4">
+                <span class="bg-blue-100 text-blue-700 px-4 py-2 rounded-full">Technology</span>
+                <span class="bg-blue-100 text-blue-700 px-4 py-2 rounded-full">Design</span>
+                <span class="bg-blue-100 text-blue-700 px-4 py-2 rounded-full">Business</span>
+                <span class="bg-blue-100 text-blue-700 px-4 py-2 rounded-full">Lifestyle</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recent Posts Section -->
+    <section class="py-12">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold mb-6 text-center text-blue-700">Recent Posts</h2>
+            <div class="space-y-4">
+                <div class="flex justify-between items-center">
+                    <h3 class="text-xl font-bold">Building a Modern Web Application</h3>
+                    <p class="text-gray-600">July 22, 2024</p>
+                </div>
+                <div class="flex justify-between items-center">
+                    <h3 class="text-xl font-bold">Understanding AI and Machine Learning</h3>
+                    <p class="text-gray-600">July 18, 2024</p>
+                </div>
+                <div class="flex justify-between items-center">
+                    <h3 class="text-xl font-bold">Crafting User-Centered Design</h3>
+                    <p class="text-gray-600">July 12, 2024</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Subscription Form -->
+    <section class="py-12 bg-gray-200">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-6 text-blue-700">Subscribe to Our Newsletter</h2>
+            <form class="flex justify-center space-x-4">
+                <input type="email" class="border border-gray-300 p-2 rounded-lg w-1/3" placeholder="Enter your email">
+                <button type="submit" class="bg-blue-500 text-white px-6 py-2 rounded-lg hover:bg-blue-600">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-gray-800 text-white py-6">
+        <div class="container mx-auto flex justify-between items-center">
+            <div>&copy; 2024 Ahmed Bennaya. All rights reserved.</div>
+            <div class="space-x-6">
+                <a href="https://www.facebook.com/ahmed.bennaya/" class="hover:text-blue-400">Facebook</a>
+                <a href="https://www.instagram.com/ahmedbennaya/" class="hover:text-blue-400">Twitter</a>
+                <a href="https://www.instagram.com/ahmedbennaya/" class="hover:text-blue-400">Instagram</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
